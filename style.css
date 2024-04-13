@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    text-align: right; /* Align the navigation to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    padding-top: 10px;
+}
+
+/* Call section styles */
+#call {
+    background-color: #f4f4f4;
+}
+
+/* Submission section styles */
+#submission {
+    background-color: #e9e9e9;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #ddd;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
