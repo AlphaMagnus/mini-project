@@ -1,0 +1,77 @@
+.publish{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.hero{
+    background: url('assets/ux-indonesia-w00FkE6e8zE-unsplash.jpg');
+    background-size: cover;
+    background-position: 5px;
+    background-attachment: local;
+    filter: opacity(60%);
+    padding: 2rem;
+}
+.hero h1{
+    font-size: 3.0rem;
+    position: relative;
+    z-index:99;
+    font-family:"Playfair Display", sans-serif;
+    color:#49108B;   
+}
+
+.publish p{
+    font-size:1.5rem;
+    color:#49108B;
+}
+.how-to-publish{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2rem;
+}
+.how-to-publish h1{
+    font-size:3rem;
+    text-align:center;
+    position: relative;
+    z-index:99;
+    font-family:"Playfair Display", sans-serif;
+    color:#49108B;
+}
+.cards h1{
+    font-size:1.5rem;
+
+}
+.cards p{
+    font-size:1.05rem;
+}
+.cards img{
+    align-self:center;
+    height:4rem;
+    width:4rem;
+}
+.cards{
+    padding:1rem;
+    display:flex;
+    flex-direction: column;
+    max-height:350px;
+    max-width:450px;
+    background-color: #fff;
+    border:1px solid #49108B;
+    transition: all 300ms;
+}
+.cards:hover{
+    transform:translateY(-5px);
+    box-shadow:5px 5px grey
+}
+.understand-publish{
+    display:flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.img-container img{
+    align-self: center;
+    max-height: 400px;
+    max-width:600px;
+}

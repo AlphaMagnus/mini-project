@@ -92,7 +92,7 @@ nav ul li a {
     display:flex;
     flex-direction: column;
     max-height:500px;
-    max-width:450px;
+    max-width:400px;
     background-color: #fff;
     border:1px solid #49108B;
     transition: all 300ms;
@@ -167,14 +167,12 @@ section p {
     font-weight:700;
     text-align: center;
     color:#49108B;
-    font-family: "Playfair Display";
 }
 
 .info p{
     font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
-    font-family:"Playfair Display" ;
     color:#5f3a88;
 }
 .signup-login{
@@ -204,13 +202,89 @@ section p {
 }
 
 /* Contact section styles */
-#contact {
-    background-color: #ddd;
-}
 
+.info h1{
+    font-size: 3rem;
+    font-weight:700;
+    text-align: center;
+    color:#49108B;
+}
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#FFF;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    color:#6320af;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color:#390c6d;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.con{
+    background:url('assets/ux-indonesia-8mikJ83LmSQ-unsplash.jpg');
+    background-size: cover;
+    background-position: 5px;
+    padding:4rem;
+    background-attachment: local;
+    filter: opacity(60%);
+
+}
+.con h1{
+    font-size: 3.0rem;
+    position: relative;
+    color:#49108B;
+}
+.contact-info {
+    font-size:1.2rem;
+    text-align: center;
+    padding: 50px 0;
+}
+ 
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+ 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #390c6d;
     color: #fff;
     text-align: center;
     padding: 20px;
