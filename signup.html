@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, 
+						initial-scale=1.0">
+	<title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+	<link rel="stylesheet"
+		href="signup.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="heading">Luminous Pages</h1>
+		<h3 class="title">Signup and Login</h3>
+	</header>
+
+	<!-- container div -->
+	<div class="container">
+
+		<!-- upper button section to select
+			the login or signup form -->
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		<!-- Form section that contains the
+			login and the signup form -->
+		<div class="form-section">
+
+			<!-- login form -->
+			<div class="login-box">
+				<input type="email"
+					class="email ele"
+					placeholder="Enter your email">
+				<input type="password"
+					class="password ele"
+					placeholder="Enter password">
+				<button class="clkbtn">Login</button>
+			</div>
+
+			<!-- signup form -->
+			<div class="signup-box">
+				<input type="text"
+					class="name ele"
+					placeholder="Enter your name">
+				<input type="email"
+					class="email ele"
+					placeholder="Enter your email">
+				<input type="password"
+					class="password ele"
+					placeholder="Enter password">
+				<input type="password"
+					class="password ele"
+					placeholder="Confirm password">
+				<button class="clkbtn">Signup</button>
+			</div>
+		</div>
+	</div>
+	<script src="signup.js"></script>
+</body>
+</html>

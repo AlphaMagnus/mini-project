@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family:"Playfair Display";
 }
 
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
+    background-color: #F3F8FF;
 }
 
 /* Header styles */
@@ -17,8 +19,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    color: #260b0b;
+    /* background-color: #fff; */
+    color: #49108B;
     padding: 20px;
 }
 
@@ -26,6 +28,7 @@ header h1 {
     margin: 0;
     font-size: 3.5em;
     font-weight: 700;
+    font-family:"Playfair Display",serif ;
     
 }
 
@@ -49,18 +52,31 @@ nav ul li a {
     text-decoration: none;
     font-weight: lighter;
 }
-#home{
+.hamburger{
+    display:none;
+}
+/* Call section styles */
+#call{
     display:flex;
     flex-direction: column;
-    gap:2rem;
+    gap:4rem;
 }
+
 .hero{
+    background: url('assets/cover-image.jpg');
+    background-size: cover;
+    background-position: 5px;
+    background-attachment: local;
+    filter: opacity(60%);
     padding: 4rem;
+
 }
-.hero h1{
+.call-books h1{
     font-size: 3.0rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:grey;
+    position: relative;
+    z-index:99;
+    font-family:"Playfair Display", sans-serif;
+    color:#49108B;
     
 }
 .card-container{
@@ -75,19 +91,19 @@ nav ul li a {
     padding:1rem;
     display:flex;
     flex-direction: column;
-    height:50vh;
-    width:25vw;
+    max-height:500px;
+    max-width:450px;
     background-color: #fff;
-    border:1px solid #7e03bb;
+    border:1px solid #49108B;
     transition: all 300ms;
 }
 .card h1{
-    color:#7e03bb;
+    color:#49108B;
     font-size:1.5em;
 }
 .card hr{
     width:100%;
-    background-color: #7e03bb;
+    background-color: #49108B;
     height:1px;
     border:none;
 }
@@ -123,10 +139,63 @@ section p {
     line-height: 1.8;
     padding-top: 10px;
 }
+/* about section */
+.about-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+    padding:4rem;
+}
+.about-img{
+    height:450px;
+    width:450px;
+    clip-path: circle(50%);
+}
+.info-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+.welcome h1{
+    font-size: 3rem;
+    font-weight:700;
+    text-align: center;
+    color:#49108B;
+    font-family: "Playfair Display";
+}
 
-/* Call section styles */
-#call {
-    background-color: #f4f4f4;
+.info p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    font-family:"Playfair Display" ;
+    color:#5f3a88;
+}
+.signup-login{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.signup,.login{
+    font-size:1.05rem;
+    color:#F3F8FF;
+    height:3rem;
+    width:6rem;
+    background-color: #390c6d;
+    border-radius:50px;
+    transition: all 300ms;
+    border:none;
+}
+.signup:hover,.login:hover{
+    background-color:#6320af;
 }
 
 /* Submission section styles */
@@ -155,16 +224,16 @@ footer {
         height:55vh;
         width:40vw;
         background-color: #fff;
-        border:1px solid #7e03bb;
+        border:1px solid #49108B;
         transition: all 300ms;
     }
     .card h1{
-        color:#7e03bb;
+        color:#49108B;
         font-size:1em;
     }
     .card hr{
         width:100%;
-        background-color: #7e03bb;
+        background-color: #49108B;
         height:1px;
         border:none;
     }
@@ -189,6 +258,46 @@ footer {
 
 
 @media(max-width:1300px){
+    .hamburger {
+        position:sticky;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        cursor: pointer;
+        display: block;
+    }
+    .menuItem {
+        display: block;
+        margin: 2px 1.2rem;
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+      }
+      
+    .closeIcon {
+        display:none;
+        color:#000;
+    }
+    .navbar {
+        position: fixed;
+        transform: translateY(-200%);
+        transition: transform 0.2s;
+        height: fit-content;
+        width:fit-content;
+        top:0;
+        right: 0;
+        z-index: 2;
+        background-color: #fff;
+        box-shadow: 2px 2px 40px rgba(0,0,0,0.5);
+        color: #260b0b;
+        list-style: none;
+        margin-top: 5rem;
+      }
+      
+      .showMenu {
+        transform: translateY(0);
+      }
     .card{
         padding:1rem;
         display:flex;
@@ -196,16 +305,16 @@ footer {
         height:50vh;
         width:25vw;
         background-color: #fff;
-        border:1px solid #7e03bb;
+        border:1px solid #49108B;
         transition: all 300ms;
     }
     .card h1{
-        color:#7e03bb;
+        color:#49108B;
         font-size:1em;
     }
     .card hr{
         width:100%;
-        background-color: #7e03bb;
+        background-color: #49108B;
         height:1px;
         border:none;
     }
@@ -230,16 +339,16 @@ footer {
         height:50vh;
         width:25vw;
         background-color: #fff;
-        border:1px solid #7e03bb;
+        border:1px solid #49108B;
         transition: all 300ms;
     }
     .card h1{
-        color:#7e03bb;
+        color:#49108B;
         font-size:1em;
     }
     .card hr{
         width:100%;
-        background-color: #7e03bb;
+        background-color: #49108B;
         height:1px;
         border:none;
     }
@@ -264,16 +373,16 @@ footer {
         height:55vh;
         width:40vw;
         background-color: #fff;
-        border:1px solid #7e03bb;
+        border:1px solid #49108B;
         transition: all 300ms;
     }
     .card h1{
-        color:#7e03bb;
+        color:#49108B;
         font-size:1.25em;
     }
     .card hr{
         width:100%;
-        background-color: #7e03bb;
+        background-color: #49108B;
         height:1px;
         border:none;
     }
@@ -298,16 +407,16 @@ footer {
         height:50vh;
         width:25vw;
         background-color: #fff;
-        border:1px solid #7e03bb;
+        border:1px solid #49108B;
         transition: all 300ms;
     }
     .card h1{
-        color:#7e03bb;
+        color:#49108B;
         font-size:1em;
     }
     .card hr{
         width:100%;
-        background-color: #7e03bb;
+        background-color: #49108B;
         height:1px;
         border:none;
     }
