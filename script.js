@@ -37,3 +37,25 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
+const form = document.querySelector("form");
+
+function sendEmail() {
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "varupandya2412@gmail.com",
+    Password : "8DB4C081463DEE1100F2268ED862E60A4CDC",
+    To : 'varupandya2412@gmail.com',
+    From : "varupandya2412@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  sendEmail();
+});
