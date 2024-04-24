@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call for Book Chapters</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luminous Pages</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Call for Book Chapters</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#call">Call for Chapters</a></li>
-                <li><a href="#submission">Submission</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Luminous Pages</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="menuItem">About</a></li>
+          <li><a href="chapter.html" class="menuItem">Call for Chapters</a></li>
+          <li><a href="submission.html" class="menuItem">Submission</a></li>
+          <li><a href="#contact" class="menuItem">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </nav>
     </header>
+    
 
     <section id="about">
-        <h2>About Us</h2>
-        <b>Welcome to the Call for Book Chapters</b><br>
-
-            <p>Are you passionate about contributing to cutting-edge research and knowledge dissemination in your field? We invite scholars, researchers, and experts like you to be part of an exciting endeavor - our call for book chapters!</p>
-            
-            <p>Here, we're dedicated to fostering collaboration and innovation in Multiple Fields. Through this call for book chapters, we aim to create a comprehensive anthology that explores the latest advancements, critical insights, and emerging trends in Latest Topics.</p>
-            
-            <p>This unique opportunity allows you to share your expertise, showcase your research, and engage with a global audience of peers and professionals. Whether you're an established academic or an emerging scholar, we welcome your contributions to this dynamic project.</p>
-    </section>
-
-    <section id="call">
-        <h2>Call for Book Chapters</h2>
-        <p>Include information about the theme, submission guidelines, and deadline here.</p>
-    </section>
-
-    <section id="submission">
-        <h2>Submission Guidelines</h2>
-        <p>Include instructions on how authors can submit their chapter proposals.</p>
+        <div class="about-container">
+            <div class="img-container">
+                <img src="assets/about-image.jpg" alt="" class="about-img">
+            </div>
+            <div class="info-container">
+                <div class="welcome">
+                    <h1>Welcome to Luminous Pages</h1>
+                </div>
+                <div class="info">
+                    <p>
+                        Your premier destination for discovering and
+                        showcasing groundbreaking literature. Founded by a team of avid readers
+                        and passionate bibliophiles, we aim to foster a vibrant community of
+                        writers and readers alike. Our platform serves as a haven for both
+                        seasoned authors and aspiring writers, offering a space where creativity
+                        knows no bounds.
+                      </p>
+                      <p>
+                        This unique opportunity allows you to share your expertise, showcase
+                        your research, and engage with a global audience of peers and
+                        professionals. Whether you're an established academic or an emerging
+                        scholar, we welcome your contributions to this dynamic project.</p>
+                </div>
+                <div class="signup-login">
+                    <a href="signup.html" target="_blank"><button type="button" class="signup">Signup</button></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Provide contact information for inquiries about the call for chapters.</p>
+        <div class="con">
+            <h1>Contact Us</h1>
+        </div>
+        <section class="info banner">
+            <h1>Get in Touch With Us</h1>
+            <p>
+            We're here to answer any questions you may have.
+            </p>
+        </section>
+    
+        <!-- Contact form -->
+        <section class="contact-form">
+            <div class="form-container">
+                <h2>Your Details</h2>
+                <form action="#" method="POST">
+    
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Phone: </label>
+                    <input type="tel" id="phone" name="phone">
+    
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Company contact info -->
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <address>
+                Luminous Pages<br>
+                123 Main Street<br>
+                Noida Sector 62, 201309<br>
+                Phone: <a href="tel:9898989029">123-456-7890</a><br>
+                Email: <a href="mailto:anubhava_t@outlook.com">anubhava_t@outlook.com</a>
+            </address>
+        </section>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Organization. All rights reserved.</p>
+      <p>&copy; 2024 Your Organization. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
