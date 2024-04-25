@@ -39,18 +39,35 @@ menuItems.forEach(
 )
 
 const form = document.querySelector("form");
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const msg = document.getElementById("message");
 
 function sendEmail() {
+  const bodyMessage = `Full Name : ${fullName.value}<br> Email : ${email.value}<br>
+   Phone Number : ${phone.value}<br> Message : ${msg.value}`;
+
+
   Email.send({
+    SecureToken : " 07cb851e-8bee-4c93-b3dc-3611f0e9211a",
     Host : "smtp.elasticemail.com",
     Username : "varupandya2412@gmail.com",
     Password : "8DB4C081463DEE1100F2268ED862E60A4CDC",
     To : 'varupandya2412@gmail.com',
     From : "varupandya2412@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Subject : "Book Chapter Query",
+    Body : bodyMessage
 }).then(
-  message => alert(message)
+  message => {
+    if(message == "OK") {
+       Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully!",
+        icon: "success"
+       });
+    }
+  }
 );
 }
 
@@ -58,4 +75,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   sendEmail();
+
+  form.reset();
+  return false;
 });
