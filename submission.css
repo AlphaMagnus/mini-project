@@ -63,6 +63,19 @@
     transform:translateY(-5px);
     box-shadow:5px 5px grey
 }
+.drop-in {
+    animation: drop-in 1s ease 200ms backwards;
+}
+@keyframes drop-in {
+from {
+     opacity: 0;
+     transform: translateY(-100px);
+}
+to {
+     opacity: 1;
+     transform: translate(0px);
+}
+}
 .understand-publish{
     display:flex;
     flex-direction: column;

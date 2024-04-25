@@ -49,22 +49,26 @@
 			</div>
 
 			<!-- signup form -->
-			<div class="signup-box">
-				<input type="text"
-					class="name ele"
-					placeholder="Enter your name">
-				<input type="email"
-					class="email ele"
-					placeholder="Enter your email">
-				<input type="password"
-					class="password ele"
-					placeholder="Enter password">
-				<input type="password"
-					class="password ele"
-					placeholder="Confirm password">
-				<button class="clkbtn">Signup</button>
-			</div>
-		</div>
+				<form id="form" action="/">
+					<div class="signup-box">
+						<input id="username" name="username" type="text" class="ele" placeholder="Name">
+						<div class="error"></div>
+					</div>
+					<div class="signup-box">
+						<input id="email" name="email" type="text" class="ele" placeholder="Email">
+						<div class="error"></div>
+					</div>
+					<div class="signup-box">
+						<input id="password"name="password" type="password" class="ele" placeholder="Password">
+						<div class="error"></div>
+					</div>
+					<div class="signup-box">
+						<input id="password2"name="password2" type="password" class="ele" placeholder="Confirm Password">
+						<div class="error"></div>
+					</div>
+						
+						<button type="submit" class="clkbtn">Sign Up</button>
+				</form>
 	</div>
 	<script src="signup.js"></script>
 </body>
