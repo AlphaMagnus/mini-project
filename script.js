@@ -77,5 +77,6 @@ form.addEventListener("submit", (e) => {
   sendEmail();
 
   form.reset();
+  
   return false;
 });

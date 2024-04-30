@@ -250,6 +250,7 @@ section p {
     margin-bottom: 1rem;
     resize: vertical;
 }
+
 .submit-button {
     padding: 10px 20px;
     background-color:#390c6d;
@@ -258,6 +259,7 @@ section p {
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
+    text-align: center;
 }
  
 /* Contact info styles */
